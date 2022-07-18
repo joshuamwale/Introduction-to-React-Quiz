@@ -1,6 +1,7 @@
 import React from "react";
 import logo from './logo.svg';
 import './App.css';
+import Users from "./Users";
 
 /**
   Challenge: Display all users to the browser
@@ -11,6 +12,12 @@ const users = [
   { name: "Jane Doe", id: 2 },
   { name: "Billy Doe", id: 3 }
 ];
+
+const myList = users.map((user) => {
+  return (<Users key={Users.id} name={Users.name}/>
+    )
+})
+
 
 // comment this out after completion and uncomment code below it to proceed
 function Child() {
@@ -66,10 +73,12 @@ function App() {
     
     <>
     <p>JSX is cool</p>
-    <img src={logo} className="App-logo" alt="Nairobi skyline" />
+    <img src={"https://nation.africa/resource/image/3883034/landscape_ratio2x1/960/480/ba95797be6ca354d185d744bd32c8468/GK/nairobi-expressway.jpg"} className="App-logo" alt="Nairobi skyline" />
 
-      <h3>User names</h3>
-      <ul></ul>
+      <h3>User names {myList}</h3>
+      <ul>
+        
+      </ul>
       <button>Hide Element Below</button>
 
       <div>Toggle Challenge</div>
