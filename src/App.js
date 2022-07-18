@@ -65,8 +65,9 @@ function App() {
   return (
     
     <>
-    
-    <img src={logo} className="App-logo" alt="logo" />
+    <p>JSX is cool</p>
+    <img src={logo} className="App-logo" alt="Nairobi skyline" />
+
       <h3>User names</h3>
       <ul></ul>
       <button>Hide Element Below</button>
